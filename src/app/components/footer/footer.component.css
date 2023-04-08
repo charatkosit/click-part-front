@@ -1,0 +1,18 @@
+
+
+.bg-img
+{
+  background-image: url("/assets/dist/img/HF2-01.png");
+
+}
+
+p{
+  font-size:  25px;
+}
+
+img {
+  float: left;
+  width: 150px;
+  height: 150px;
+  display: flex;
+}

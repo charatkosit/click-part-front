@@ -1,0 +1,100 @@
+<div class="content-wrapper">
+  <div class="container-fluid bg-secondary mb-5">
+    <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 150px">
+        <h1 class="font-weight-semi-bold text-uppercase mb-3">Add-Products</h1>
+        <div class="d-inline-flex">
+            <p class="m-0"><a routerLink="/home">Home</a></p>
+            <p class="m-0 px-2">-</p>
+            <p class="m-0">Add-Products</p>
+        </div>
+    </div>
+</div>
+<!-- Page Header End -->
+  
+    <!-- Main content -->
+    <div class="card wrap" style="width: 100%;">
+      <div class="wrap card-body">
+  
+        
+        <div class="grid" style="width: 100%; font-size: 12px;">
+          <p>
+            <a href="#" class="select"><i class="fa fa-fw fa-filter right-4"></i>Filter</a>
+            <select class="select">
+              <option value="Status All">Status All</option>
+              <option value="Draft">Draft</option>
+              <option value="Open">Open</option>
+              <option value="Shpiped">Shpiped</option>
+            </select>
+            Due Date : <input id="Due_start" name="Due_start" type="date" class="date" style="font-size: 10px; width: 60px;">
+            <!-- <a  style="float: right;">Search: <input id="filter" type="text"/></a> -->
+
+        
+             
+             <button class="buttonImport" style="float: right;" id="file" name="button" value="Upload" onclick="thisFileUpload();">Import Excel</button>
+               
+             <button class="buttonImport" style="float: right;" id="button" name="button">Add Items</button>
+ 
+ 
+             <!-- <script>
+                 function thisFileUpload() {
+               document.getElementById("file").click();
+             };
+             </script> -->
+          </p>
+               <!-- file import -->
+         
+
+
+      
+        <table  id="example2" class="table table-bordered table-striped" >
+           <thead style="text-align: center;">          
+              <tr style="text-align: center;">
+                  <th style="width: 15%; font-size: 12px;">ID.</th>
+                  <th style="width: 15%; font-size: 12px;">Product Name</th>
+                  <th style="width: 10%; font-size: 12px;">Description</th>
+                  <th style="width: 15%; font-size: 12px;">Brand</th>
+                  <th style="width: 15%; font-size: 12px;">Item Group</th>
+                  <th style="width: 10%; font-size: 12px;">SKU</th>
+                  <th style="width: 10%; font-size: 12px;">ST Price</th>  
+                  <th style="width: 10%; font-size: 12px;">SL Price</th>
+                  <th style="width: 10%; font-size: 12px;">Stock</th> 
+                  <th style="width: 10%; font-size: 12px;">Weigth</th> 
+                  <th style="width: 10%; font-size: 12px;">Wide</th> 
+                  <th style="width: 10%; font-size: 12px;">Long</th> 
+                  <th style="width: 10%; font-size: 12px;">High</th>     
+           </thead>     
+           <tbody style="text-align: center;" *ngFor="let products of products">    
+              <tr style="background-color: white;">
+                <td>{{products.ProductsId}}</td>
+                <td>{{products.ProductsName}}</td>  
+                <td>{{products.Description}}</td> 
+                <td>{{products.Brand}}</td>
+                <td>{{products.ItemGroup}}</td>      
+                <td>{{products.SKU}}</td>
+                <td>{{products.ST_Price}}</td>
+                <td>{{products.SL_Price}}</td>
+                <td>{{products.Stock}}</td>
+                <td>{{products.Weigth}}</td>
+                <td>{{products.Wide}}</td>
+                <td>{{products.Long}}</td>
+                <td>{{products.High}}</td>
+              </tr>
+            </tbody>    
+        </table>      
+      </div>
+      </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  

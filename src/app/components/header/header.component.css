@@ -1,0 +1,11 @@
+img {
+    float: left;
+    width: 150px;
+    height: 150px;
+    display: flex;
+}
+
+.container-fluid{
+    background-image: url("/assets/dist/img/HF1-02-01.png");
+    background-size: 1900px 213px;
+}

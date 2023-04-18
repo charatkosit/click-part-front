@@ -21,7 +21,8 @@ import { ForgotPasswordComponent } from './users/forgot-password/forgot-password
 import { OrderListComponent } from './admin/order-list/order-list.component';
 import { PaymentListComponent } from './admin/payment-list/payment-list.component';
 import { AddProductsComponent } from './admin/add-products/add-products.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
 @NgModule({
   declarations: [
     AppComponent,
@@ -48,7 +49,9 @@ import { AddProductsComponent } from './admin/add-products/add-products.componen
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

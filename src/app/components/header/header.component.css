@@ -9,3 +9,38 @@ img {
     background-image: url("/assets/dist/img/HF1-02-01.png");
     background-size: 1900px 213px;
 }
+
+.fas.fa-heart {
+    color: rgb(255, 211, 13);
+  }
+
+@media screen and (max-width: 1023px) {
+    .fas.fa-heart {
+      color: rgb(255, 211, 13);
+    }
+  }
+  
+  /* Heart icon after max-width: 480px */
+  @media screen and (max-width: 480px) {
+    .fas.fa-heart {
+      color: rgb(253, 253, 253);
+    }
+  }
+
+
+  .fa-shopping-cart {
+    color: rgb(255, 211, 13);
+  }
+
+@media screen and (max-width: 1023px) {
+    .fa-shopping-cart {
+      color: rgb(255, 211, 13);
+    }
+  }
+  
+  /* Heart icon after max-width: 480px */
+  @media screen and (max-width: 480px) {
+    .fa-shopping-cart {
+      color: rgb(253, 253, 253);
+    }
+  }

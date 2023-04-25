@@ -20,7 +20,7 @@ export class ShoppingComponent implements OnInit {
 
 
   ngOnInit() {
-    this.http.get<Product[]>('http://localhost:3000/api/v1/products')
+    this.http.get<Product[]>('http://54.169.46.160:3000/api/v1/products')
       .subscribe((data) => {
         this.products = data;
       });

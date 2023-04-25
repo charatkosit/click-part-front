@@ -27,7 +27,7 @@ RUN npm run build
 FROM nginx:alpine
 WORKDIR /usr/share/nginx/html
 RUN rm -rf ./*
-COPY --from=builder /app/dist/click-front-sit .
+COPY --from=builder /app/dist/click-part .
 COPY /nginx.conf  /etc/nginx/conf.d/default.conf
 # Exposing a port, here it means that inside the container 
 # the app will be using Port 80 while running

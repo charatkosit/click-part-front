@@ -1,6 +1,6 @@
 {
-  "name": "frontend-clickpart",
-  "version": "0.0.6",
+  "name": "click-part",
+  "version": "0.0.7",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

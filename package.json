@@ -1,6 +1,6 @@
 {
-  "name": "fontend-goplus",
-  "version": "0.0.4",
+  "name": "frontend-clickpart",
+  "version": "0.0.5",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

@@ -6,7 +6,7 @@ export const environment = {
   production: false,
   loginResult: "loginResult",
   baseUrl: "",
-  backendUrl: "http://127.0.0.1:3000/",
+  backendUrl: "http://54.169.46.160:3000/",
   project: "Build Dev:v0.1.4f on 27/01/23",
   release: "dev ",
   user_name: "no_assign",

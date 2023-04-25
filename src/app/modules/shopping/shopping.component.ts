@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { CartService } from 'src/service/cart.service';
 import { Product } from 'src/interfaces/product.interface'; 
 import { ToastrService, ToastrModule } from 'ngx-toastr';
+import { environment } from 'src/environments/environment';
 @Component({
   selector: 'app-shopping',
   templateUrl: './shopping.component.html',
@@ -17,10 +18,11 @@ export class ShoppingComponent implements OnInit {
 
   constructor(private http: HttpClient ,private cartService: CartService,private toastr: ToastrService) { }
 
-
-
+  
   ngOnInit() {
-    this.http.get<Product[]>('http://54.169.46.160:3000/api/v1/products')
+    const uri = environment.backendUrl;
+    // console.log(`uri is ${uri}`)
+    this.http.get<Product[]>(`${uri}api/v1/products`)
       .subscribe((data) => {
         this.products = data;
       });
